@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto 01 - Tablet</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/meu-estilo.css">
 </head>
 
 <body>
@@ -14,11 +15,12 @@
     <h1 class="text-center mb-5 mt-5">Projeto Tablet</h1>
     <div class="row">
       <div style="display: flex; align-items: center;justify-content: center; flex-direction: column;">
-        <img src="./imagens/tablet-desligado.jpg" alt="Tablet desligado">
+        <img class="esconder" id="imagemDesbloqueada" src="./imagens/tablet-ligado.png" alt="Tablet Desboqueado">
+        <img class="mostrar" id="imagemBloqueada" src="./imagens/tablet-desligado.jpg" alt="Tablet Bloqueado">
         <div class="mt-5">
           <div class="btn-group">
-            <button class="btn btn-primary">Ligar</button>
-            <button class="btn btn-default">Desligar</button>
+            <button id="botaoDesbloquear" class="btn btn-primary">Desbloquear</button>
+            <button id="botaoBloquear" class="btn btn-default">Bloquear</button>
           </div>
         </div>
       </div>
