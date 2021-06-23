@@ -65,7 +65,8 @@ const float = 1.2;
 // typeof = serve para verificar o tipo de um determinado elemento, ex: typeof alert()
 // string = tudo que for referente a texto. '' ou ""
 // number = tudo que for numero é igual a number. ex: 1; 2;
-// boolean = tudo que for verdeiro ou falso. ex: const boleano = true;;
+// double/float = tudo for numero com casa decimais. ex: 1.2; 400.1;
+// boolean = tudo que for verdeiro ou falso. ex: const boleano = true;
 // null = quando não tem nada ou nulo
 // undefined = quando o valor não foi definido
 
@@ -126,7 +127,7 @@ const float = 1.2;
 //   case 'segunda':
 //     alert('Hoje é segunda :(');
 //     break;
-//   case 'segunda':
+//   case 'terca':
 //     alert('Hoje é minha terça tá parecendo segunda :/');
 //     break;
 //   case 'quarta':
@@ -142,12 +143,13 @@ const float = 1.2;
 //     alert('Não achei nenhum dia da semana :(');
 // }
 
+// Laços de repetição
+
 // let passos;
 // const metaDePassos = 1000;
 
 // for (passos = 1; passos <= metaDePassos; passos++) {
 //   console.log(`já dei ${passos} passos`);
-
 //   if (passos === metaDePassos) {
 //     alert('Você atigiu sua meta diaria de passos, parabens!');
 //   }
@@ -193,3 +195,68 @@ const float = 1.2;
 //   default:
 //     alert('Não achei nenhum dia da semana :(');
 // }
+
+// Objetos
+// Objeto é um tipo de dado que contém uma coleção de propriedades organizadas com chave e valor;
+
+let estudantes = [
+  {
+    nome: 'Rodrigo Ribeiro',
+    idade: 34,
+    profissao: 'Desenvolvedor',
+    turma: 'Turma 1',
+    temTrabalho: false,
+  },
+  {
+    nome: 'Edmar Santos',
+    idade: 45,
+    profissao: 'Desenvolvedor',
+    turma: 'Turma 2',
+    temTrabalho: true,
+  },
+  {
+    nome: 'Ludmila Garcia',
+    idade: 18,
+    profissao: 'Desenvolvedora',
+    turma: 'Turma 1',
+    temTrabalho: false,
+  },
+  {
+    nome: 'Natalia Garcia',
+    idade: 20,
+    profissao: 'Ux Designer',
+    turma: 'Turma 2',
+    temTrabalho: true,
+  },
+];
+console.log(estudantes.length);
+
+// Exemplo usando o map
+// estudantes.map(function (estudante) {
+//   console.log(estudante.nome, estudante.idade);
+// });
+
+// Exemplo filter
+// const resultadoFiltro = estudantes.filter(function (estudante) {
+//   return estudante.idade <= 35;
+// });
+
+// Exemplo find
+// const resultadoEncontrar = estudantes.find(function (estudante) {
+//   return estudante.idade <= 35;
+// });
+
+// console.log(resultadoEncontrar);
+
+// const estudantes = new Object();
+
+// estudantes.nome = 'Aline';
+// estudantes.idade = 25;
+// estudantes.profissao = 'Desenvolvedora';
+// estudantes.turma = 'Turma 1';
+// estudantes.temTrabalho = true;
+
+//Pegando valores do objeto
+// console.log('Nome: ', estudante.nome);
+// console.log('Idade: ', estudante.idade);
+// console.log('Profissão: ', estudante.profissao);
